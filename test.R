@@ -45,7 +45,10 @@ downloadADME <- function(idCentral = c("bon", "pal", "bay"),
 
 
 
-downloadADME("toto", 2023, 2) # Error: should be one of “bon”, “pal”, “bay”
+a <- downloadADME("pal", 2023, 2) # Error: should be one of “bon”, “pal”, “bay”
+
+# Por qué no funciona??
+download.file(a, "tmppp.ods")
 
 for (mes in 6:8) {
   downloadADME("pal", 2022, mes)
