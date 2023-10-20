@@ -2,6 +2,9 @@ require(magrittr)
 require(tibble)
 require(httr)
 
+# Será que hay que configurar al servidor para que tenga un cors??
+# https://youtu.be/4KHiSt0oLJ0?si=RS4g7NC9fazL-ZNR
+
 mklink <- function(id_contrato, anio, mes) {
   paste0(
     "https://172.20.0.30/visor_interno/index.php/Data/getDatosBoyaMes?id_contrato=", id_contrato,
